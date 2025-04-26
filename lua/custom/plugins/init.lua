@@ -2,12 +2,12 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
+---@module 'lazy'
+---@type LazySpec
 return {
   {
     'alker0/chezmoi.vim',
     lazy = false,
-    init = function()
-      vim.g['chezmoi#use_tmp_buffer'] = true
-    end,
+    init = function() vim.g['chezmoi#use_tmp_buffer'] = true end,
   },
 }
