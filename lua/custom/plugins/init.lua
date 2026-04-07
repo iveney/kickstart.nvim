@@ -10,4 +10,14 @@ return {
     lazy = false,
     init = function() vim.g['chezmoi#use_tmp_buffer'] = true end,
   },
+  {
+    'm4xshen/hardtime.nvim',
+    lazy = false,
+    dependencies = { 'MunifTanjim/nui.nvim' },
+    opts = {},
+  },
+  {
+    'rcarriga/nvim-notify',
+    init = function() vim.notify = require 'notify' end,
+  },
 }
